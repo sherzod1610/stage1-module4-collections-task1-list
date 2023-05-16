@@ -15,14 +15,14 @@ class ListComparator implements Comparator<String> {
         int valueA = calculateFunction(a);
         int valueB = calculateFunction(b);
 
-        if (valueA != valueB){
+        if (valueA != valueB) {
             return Integer.compare(valueA, valueB);
         }
         return a.compareTo(b);
     }
 
-    public int calculateFunction(String value){
+    public int calculateFunction(String value) {
         int x = Integer.parseInt(value);
-        return 5*x*x+3;
+        return 5 * x * x + 3;
     }
 }

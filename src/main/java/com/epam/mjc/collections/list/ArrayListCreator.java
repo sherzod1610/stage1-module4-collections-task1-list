@@ -10,10 +10,10 @@ public class ArrayListCreator {
         if (list.size() == 0) {
             return list1;
         }
-        for (int i = 1; i <= list.size(); i++) {
-            if ((i) % 3 == 0) {
-                list1.add(list1.get(i));
-                list1.add(list1.get(i));
+        for (int i = 0; i <= list.size()-1; i++) {
+            if ((i+1) % 3 == 0) {
+                list1.add(list.get(i));
+                list1.add(list.get(i));
             }
         }
         return list1;
